@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplo</title>
+    <style>
+      #um {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        justify-content: space-around;
+        border: 1px solid black;
+        height: 200px;
+        width: 400px;
+      }
+      #um > div {
+        border: 2px dotted red;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="um">
+      <div style="align-self:flex-end;">A</div>
+      <div style="align-self:stretch;">B</div>
+      <div style="align-self:flex-start;">C</div>
+    </div>
+  </body>
+</html>
