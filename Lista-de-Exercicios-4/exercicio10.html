@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercício 10</title>
+    <style>
+      html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: Calibri, sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+      }
+      #menu {
+        height: 70px; 
+        border-bottom: 1px solid #aaa;
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 20px; 
+      }
+      #corpo {
+        flex: 10; 
+        display: flex; /* Flexbox para dividir o corpo */
+        background-color: #444;
+      }
+      #esquerda {
+        width: 200px; /* Largura fixa */
+        background-color: #444; /* Cor de fundo amarelo */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Espaça os itens */
+        padding: 10px; /* Adiciona espaço interno */
+      }
+      #esquerda a {
+        display: block; /* Faz os links ocuparem toda a largura */
+        color: #4169E1; /* Cor do link */
+        text-decoration: none; /* Remove sublinhado */
+        margin-bottom: 10px; /* Espaço entre os links */
+      }
+      #esquerda a:hover {
+        color: #FF1493; /* Cor ao passar o mouse */
+      }
+      #direita {
+        flex: 1; /* Ocupa o restante da largura */
+        background-color: #444; /* Cor de fundo ciano */
+        display: flex; /* Flexbox para centralizar o conteúdo */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+      }
+      form {
+        width: 300px; /* Largura do formulário */
+        display: flex;
+        flex-direction: column;
+      }
+      label, input {
+        width: 100%; /* Ocupa toda a largura */
+        margin-bottom: 10px; /* Espaço entre os elementos */
+      }
+      input[type="submit"], input[type="reset"] {
+        background-color: #1E90FF; /* Cor de fundo do botão */
+        color: white; /* Cor do texto */
+        border: none; /* Remove borda */
+        padding: 10px; /* Espaçamento interno */
+        cursor: pointer; /* Cursor em forma de mão */
+      }
+      #rodape {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+        height: 80px; 
+        border-top: 1px solid #aaa; 
+      }
+      #avatar {
+        display: flex;
+        align-items: center; 
+      }
+      #avatar img {
+        margin-left: 10px; 
+      }
+      #esquerda img {
+        margin-top: auto; /* Faz a imagem ir para a parte inferior */
+        width: 100%; /* Ajusta a largura da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <div id="titulo">
+        <img src="./imagens/css.png" alt="Ícone CSS" width="60" height="60" />
+        <div>CSS3</div>
+      </div>
+      <div id="avatar">
+        <div>Bill Gates</div>
+        <img src="./imagens/avatar.jpg" alt="Avatar" width="42" height="42" />
+      </div>
+    </div>
+    <div id="corpo">
+      <div id="esquerda">
+        <div>
+          <a href="./exercicio1.html">Exercício 01</a>
+          <a href="./exercicio2.html">Exercício 02</a>
+          <a href="./exercicio3.html">Exercício 03</a>
+          <a href="./exercicio4.html">Exercício 04</a>
+          <a href="./exercicio5.html">Exercício 05</a>
+          <a href="./exercicio6.html">Exercício 06</a>
+          <a href="./exercicio7.html">Exercício 07</a>
+          <a href="./exercicio8.html">Exercício 08</a>
+          <a href="./exercicio10.html">Exercício 10</a>
+        </div>
+        <img src="./imagens/html.png" alt="html" />
+      </div>
+      <div id="direita">
+        <form>
+          <fieldset>
+            <legend>Login</legend>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="mail" required />
+            </div>
+            <div>
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" required />
+            </div>
+            <div id="botoes">
+              <input type="submit" value="Enviar" class="botao" />
+              <input type="reset" value="Limpar" class="botao" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div id="rodape">
+      <img src="./imagens/Fatec.png" alt="Fatec" width="87" height="41" />
+      <img src="./imagens/CPS.png" alt="CPS" width="85" height="56" />
+      <img src="./imagens/Brasao.png" alt="Brasão" width="81" height="54" />
+    </div>
+  </body>
+</html>
